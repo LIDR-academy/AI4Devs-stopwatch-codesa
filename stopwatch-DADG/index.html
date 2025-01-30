@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronómetro y Temporizador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main-panel">
+        <button id="btn-cronometro">Cronómetro</button>
+        <button id="btn-countdown">CountDown</button>
+    </div>
+
+    <div id="cronometro-panel" class="hidden">
+        <div id="display">00:00:00:000</div>
+        <div class="buttons">
+            <button id="start-cronometro" class="green">Start</button>
+            <button id="clear-cronometro" class="red">Clear</button>
+        </div>
+        <button id="back-cronometro" class="back">Back</button>
+    </div>
+
+    <div id="countdown-panel" class="hidden">
+        <div id="display-countdown">00:00:00:000</div>
+        <div id="number-buttons">
+            <button class="num">0</button><button class="num">1</button><button class="num">2</button>
+            <button class="num">3</button><button class="num">4</button><button class="num">5</button>
+            <button class="num">6</button><button class="num">7</button><button class="num">8</button>
+            <button class="num">9</button>
+        </div>
+        <div class="buttons">
+            <button id="set-countdown" class="green">SET</button>
+            <button id="clear-countdown" class="gray">Clear</button>
+        </div>
+        <div class="buttons hidden" id="countdown-controls">
+            <button id="start-countdown" class="green">Start</button>
+            <button id="clear-timer" class="red">Clear</button>
+        </div>
+        <button id="back-countdown" class="back">Back</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
