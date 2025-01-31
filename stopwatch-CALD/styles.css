@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.header {
+    background-color: #003399;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.home-screen {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    text-align: center;
+}
+
+.option {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.arrow {
+    width: 100px;
+    height: 100px;
+    margin: 1rem auto;
+}
+
+.arrow-up {
+    background-color: #22cc22;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.arrow-down {
+    background-color: #ff4444;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+
+.timer-display {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: monospace;
+}
+
+.controls {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: opacity 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-start {
+    background-color: #22cc22;
+    color: white;
+}
+
+.btn-clear {
+    background-color: #ff4444;
+    color: white;
+}
+
+.btn-back {
+    background-color: #003399;
+    color: white;
+}
+
+.numpad {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.numpad button {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: #22cc22;
+    color: black;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.footer-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.footer-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.footer-btn.ad-free {
+    background-color: #f44336;
+}
+
+.btn-continue {
+    background-color: #003399;
+    color: white;
+}
+
+#countdownControls {
+    margin-top: 1rem;
+}
+
+.numpad button:last-child {
+    background-color: #ff4444;
+    color: white;
+}
+
+.numpad button.set-btn {
+    background-color: #003399;
+    color: white;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Home Screen -->
+        <div id="homeScreen">
+            <div class="home-screen">
+                <div class="option" onclick="showScreen('stopwatch')">
+                    <h2>Stopwatch</h2>
+                    <div class="arrow arrow-up"></div>
+                </div>
+                <div class="option" onclick="showScreen('countdown')">
+                    <h2>Countdown</h2>
+                    <div class="arrow arrow-down"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stopwatch Screen -->
+        <div id="stopwatchScreen" class="hidden">
+            <div class="timer-display" id="stopwatchDisplay">00:00:00</div>
+            <div class="controls">
+                <button class="btn btn-start" id="stopwatchStartBtn">Start</button>
+                <button class="btn btn-clear">Clear</button>
+                <button class="btn btn-back" onclick="showScreen('home')">Back</button>
+            </div>
+        </div>
+
+        <!-- Countdown Screen -->
+        <div id="countdownScreen" class="hidden">
+            <div class="timer-display" id="countdownDisplay">00:00:00</div>
+            <div class="numpad">
+                <button>5</button>
+                <button>6</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>Set</button>
+                <button>0</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>Clear</button>
+            </div>
+            <div id="countdownControls" class="controls hidden">
+                <button class="btn btn-continue" id="countdownStartBtn">Start</button>
+                <button class="btn btn-clear">Clear</button>
+            </div>
+            <button class="btn btn-back" onclick="showScreen('home')">Back</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
