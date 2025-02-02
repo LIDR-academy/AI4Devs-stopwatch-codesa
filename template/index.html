@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Timer and Countdown</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relojes</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>Timer and Countdown</h1>
-<script src="script.js"></script>
+  <div id="main-screen">
+    <h1>Cronómetro y Cuenta regresiva</h1>
+    <button id="stopwatch-button">
+      <img src="Cronometro.png" alt="Cronómetro">
+      Stopwatch
+    </button>
+    <button id="countdown-button">
+      <img src="Cuenta regresiva 1.png" alt="Cuenta regresiva">
+      Countdown
+    </button>
+  </div>
+
+  <div id="stopwatch-screen" class="hidden">
+    <h1>Cronómetro</h1>
+    <div id="stopwatch-time">00:00:00.<span class="milliseconds">000</span></div>
+    <button id="start-pause-resume">Comenzar</button>
+    <button id="reset-stopwatch">Limpiar</button>
+    <button id="back-to-main-1">Regresar</button>
+  </div>
+
+  <div id="countdown-screen" class="hidden">
+    <h1>Cuenta Regresiva</h1>
+    <div id="countdown-time">00:00:00.<span class="milliseconds">000</span></div>
+    <div id="number-buttons">
+      <button class="number">0</button>
+      <button class="number">1</button>
+      <button class="number">2</button>
+      <button class="number">3</button>
+      <button class="number">4</button>
+      <button class="number">5</button>
+      <button class="number">6</button>
+      <button class="number">7</button>
+      <button class="number">8</button>
+      <button class="number">9</button>
+      <button id="define-time">Definir</button>
+      <button id="clear-time">Limpiar</button>
+    </div>
+    <button id="redefine-time" class="hidden">Redefinir</button>
+    <button id="start-pause-countdown" class="hidden">Comenzar</button>
+    <button id="back-to-main-2">Regresar</button>
+  </div>
+  <script src="scripts.js"></script>
 </body>
 </html>
