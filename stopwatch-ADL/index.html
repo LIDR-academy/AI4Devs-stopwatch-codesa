@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Stopwatch and Countdown</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Main Menu -->
+        <div id="main-menu" class="screen">
+            <header>
+            </header>
+            <div class="menu-options">
+                <div class="option" onclick="showScreen('stopwatch-screen')">
+                    <h2>Stopwatch</h2>
+                    <div class="arrow up"></div>
+                </div>
+                <div class="option" onclick="showScreen('countdown-screen')">
+                    <h2>Countdown</h2>
+                    <div class="arrow down"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stopwatch Screen -->
+        <div id="stopwatch-screen" class="screen hidden">
+            <div class="timer-display">
+                <span id="stopwatch">00:00:00</span>
+                <span class="milliseconds">000</span>
+            </div>
+            <div class="controls">
+                <button id="stopwatch-start" class="btn green">Start</button>
+                <button id="stopwatch-clear" class="btn gray">Clear</button>
+            </div>
+            <button class="back-btn" onclick="showScreen('main-menu')">
+                <span class="arrow-left"></span> Back
+            </button>
+        </div>
+
+        <!-- Countdown Screen -->
+        <div id="countdown-screen" class="screen hidden">
+            <div class="timer-display">
+                <span id="countdown">00:00:00</span>
+                <span class="milliseconds">000</span>
+            </div>
+            <div class="numpad">
+                <button class="num-btn">5</button>
+                <button class="num-btn">6</button>
+                <button class="num-btn">7</button>
+                <button class="num-btn">8</button>
+                <button class="num-btn">9</button>
+                <button class="num-btn set-btn">Set</button>
+                <button class="num-btn">0</button>
+                <button class="num-btn">1</button>
+                <button class="num-btn">2</button>
+                <button class="num-btn">3</button>
+                <button class="num-btn">4</button>
+                <button class="num-btn clear-btn">Clear</button>
+            </div>
+            <button class="back-btn" onclick="showScreen('main-menu')">
+                <span class="arrow-left"></span> Back
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
