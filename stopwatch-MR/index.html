@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronómetro y Cuenta Regresiva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-buttons">
+            <button id="cronometro-btn">
+                <span class="arrow up"></span>
+                Cronómetro
+            </button>
+            <button id="cuenta-regresiva-btn">
+                <span class="arrow down"></span>
+                Cuenta Regresiva
+            </button>
+        </div>
+
+        <!-- Cronómetro -->
+        <div id="cronometro-container" class="hidden">
+            <label id="cronometro-time">00:00:00:000</label>
+            <div class="button-container">
+                <button id="start-cronometro" class="green">Start</button>
+                <button id="clear-cronometro" class="red">Clear</button>
+            </div>
+            <button id="back-cronometro" class="back">Back</button>
+        </div>
+
+        <!-- Cuenta regresiva -->
+        <div id="cuenta-regresiva-container" class="hidden">
+            <label id="cuenta-regresiva-time">00:00:00:000</label>
+            <div class="number-panel">
+                <div id="panel-top">
+                    <button class="number-btn">5</button>
+                    <button class="number-btn">6</button>
+                    <button class="number-btn">7</button>
+                    <button class="number-btn">8</button>
+                    <button class="number-btn">9</button>
+                </div>
+                <div id="panel-bottom">
+                    <button class="number-btn">0</button>
+                    <button class="number-btn">1</button>
+                    <button class="number-btn">2</button>
+                    <button class="number-btn">3</button>
+                    <button class="number-btn">4</button>
+                </div>
+            </div>
+            <div class="button-container">
+                <button id="set-cuenta-regresiva" class="green">Set</button>
+                <button id="clear-cuenta-regresiva" class="gray">Clear</button>
+            </div>
+            <button id="back-cuenta-regresiva" class="back">Back</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

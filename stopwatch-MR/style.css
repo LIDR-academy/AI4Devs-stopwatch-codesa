@@ -1,0 +1,104 @@
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.green {
+    background-color: green;
+    color: white;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+
+.gray {
+    background-color: gray;
+    color: white;
+}
+
+.back {
+    background-color: #ccc;
+}
+
+.hidden {
+    display: none;
+}
+
+.main-buttons button {
+    display: inline-block;
+    margin: 10px;
+}
+
+.arrow {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.arrow.up::before {
+    content: "↑";
+    color: green;
+}
+
+.arrow.down::before {
+    content: "↓";
+    color: red;
+}
+
+.number-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.number-btn:hover {
+    background-color: lightgray;
+}
+
+.number-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#panel-top {
+    display: flex;
+}
+
+#panel-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+#cronometro-time, #cuenta-regresiva-time {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.button-container {
+    margin: 20px 0;
+}
