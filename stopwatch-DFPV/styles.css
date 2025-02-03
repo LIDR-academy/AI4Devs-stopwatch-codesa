@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.controls {
+    margin: 20px;
+}
+
+.time-inputs {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.time-inputs input {
+    width: 60px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    margin: 5px;
+}
+
+.timer {
+    font-size: 50px;
+    font-weight: bold;
+    background: #e0e0ff;
+    border-radius: 15px;
+    padding: 20px;
+    display: inline-block;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#startBtn {
+    background-color: green;
+    color: white;
+}
+
+#clearBtn {
+    background-color: red;
+    color: white;
+}
