@@ -114,3 +114,14 @@ No lo realizo correctamente
 Separar la logica de las dos modos Stopwatch y Countdown en dos archivos stopwatch.js y countdown.js
 
 No lo realizo correctamente
+
+## Prompts 11:
+Rectificar la funcionalidad del modo Countdown
+El botón "limpiar" debe detener el conteo del cronometro y asignarle el valor que el usuario ingreso
+El botón "Continuar" debe reanudar la sumatoria del cronometro a partir del valor que tenga el cronometro en ese instante
+
+## Prompts 12:
+Separar la logica de las dos modos Stopwatch y Countdown en dos archivos stopwatch.js y countdown.js, y Documentar los metodos
+
+## Prompts 13:
+verifica la funcionalidad del modo Countdown, se requiere que cuando el cronometro llegue a 00:00:00 se muestre una alerta al usuario indicando que el conteo finalizo y que se active el audio C:\Jescica\dev1\AI4Devs-stopwatch-codesa\stopwatch-jps\Alarma de despertador.mp3
