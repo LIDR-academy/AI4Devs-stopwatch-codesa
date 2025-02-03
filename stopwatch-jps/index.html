@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronómetro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="title">Cronómetro</h1>
+            <div class="language-selector">
+                <select id="languageSelect">
+                    <option value="es">🇨🇴 Español</option>
+                    <option value="en">🇺🇸 English</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="modeSelection" class="mode-selection">
+            <div class="mode-card">
+                <h2>⬆️ Stopwatch</h2>
+            </div>
+            <div class="mode-card">
+                <h2>⬇️ Countdown</h2>
+            </div>
+        </div>
+
+        <div id="stopwatchPanel" class="hidden">
+            <div class="timer-display">
+                <span id="stopwatchTime">00:00:00</span>
+                <span class="milliseconds">.000</span>
+            </div>
+            <div class="buttons-container">
+                <button class="btn" id="stopwatchStart" data-translate="start">Iniciar</button>
+                <button class="btn" id="stopwatchPause" style="display: none;" data-translate="pause">Pausar</button>
+                <button class="btn" id="stopwatchContinue" style="display: none;" data-translate="continue">Continuar</button>
+                <button class="btn btn-secondary" id="stopwatchClear" data-translate="clear">Limpiar</button>
+                <button class="btn btn-secondary return-btn" data-translate="return">↩️ Regresar</button>
+            </div>
+        </div>
+
+        <div id="countdownInputPanel" class="hidden">
+            <div class="timer-display">
+                <span id="countdownInput">00:00:00</span>
+                <span class="milliseconds">.000</span>
+            </div>
+            <div class="numpad">
+                <button class="numpad-btn" data-number="1">1</button>
+                <button class="numpad-btn" data-number="2">2</button>
+                <button class="numpad-btn" data-number="3">3</button>
+                <button class="numpad-btn" data-number="4">4</button>
+                <button class="numpad-btn" data-number="5">5</button>
+                <button class="numpad-btn" data-number="6">6</button>
+                <button class="numpad-btn" data-number="7">7</button>
+                <button class="numpad-btn" data-number="8">8</button>
+                <button class="numpad-btn" data-number="9">9</button>
+                <button class="numpad-btn" data-number="0">0</button>
+            </div>
+            <div class="buttons-container">
+                <button class="btn" id="countdownSave" data-translate="save">Guardar</button>
+                <button class="btn btn-secondary" id="countdownInputClear" data-translate="clear">Limpiar</button>
+                <button class="btn btn-secondary return-btn" data-translate="return">↩️ Regresar</button>
+            </div>
+        </div>
+
+        <div id="countdownPanel" class="hidden">
+            <div class="timer-display">
+                <span id="countdownTime">00:00:00</span>
+                <span class="milliseconds">.000</span>
+            </div>
+            <div class="buttons-container">
+                <button class="btn" id="countdownStart" data-translate="start">Iniciar</button>
+                <button class="btn" id="countdownPause" style="display: none;" data-translate="pause">Pausar</button>
+                <button class="btn" id="countdownContinue" style="display: none;" data-translate="continue">Continuar</button>
+                <button class="btn btn-secondary" id="countdownClear" data-translate="clear">Limpiar</button>
+                <button class="btn btn-secondary" id="countdownEdit" data-translate="edit">Editar</button>
+                <button class="btn btn-secondary return-btn" data-translate="return">↩️ Regresar</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="stopwatch.js"></script>
+    <script src="countdown.js"></script>
+</body>
+</html>

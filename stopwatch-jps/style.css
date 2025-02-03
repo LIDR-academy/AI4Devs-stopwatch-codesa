@@ -1,0 +1,150 @@
+:root {
+    --primary-color: #2196F3;
+    --secondary-color: #FFA726;
+    --background-color: #f5f5f5;
+    --text-color: #333;
+    --button-hover: #1976D2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.language-selector {
+    position: relative;
+    cursor: pointer;
+}
+
+.language-selector select {
+    padding: 5px 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.mode-selection {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.mode-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+    width: 45%;
+    text-align: center;
+}
+
+.mode-card:hover {
+    transform: translateY(-5px);
+}
+
+.timer-display {
+    font-size: 4rem;
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Courier New', monospace;
+}
+
+.milliseconds {
+    font-size: 2rem;
+    vertical-align: super;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    min-width: 100px;
+}
+
+.btn:hover {
+    background-color: var(--button-hover);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+}
+
+.numpad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+.numpad-btn {
+    padding: 15px;
+    font-size: 1.2rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .timer-display {
+        font-size: 3rem;
+    }
+
+    .milliseconds {
+        font-size: 1.5rem;
+    }
+
+    .mode-selection {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mode-card {
+        width: 100%;
+    }
+}
