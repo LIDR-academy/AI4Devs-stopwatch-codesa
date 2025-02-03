@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cronometro y Cuenta Regresiva</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Cronometro y Cuenta Regresiva</h1>
+
+        <div class="selector">
+            <button id="btnCronometro">Cronometro</button>
+            <button id="btnCuentaAtras">Cuenta Regresiva</button>
+        </div>
+
+        <div id="cronometro" class="oculto">
+            <div class="display">
+                <span id="cronometroDisplay">00:00:00</span>
+            </div>
+            <div class="botones">
+                <button id="btnIniciarCronometro">Iniciar</button>
+                <button id="btnReiniciarCronometro">Reiniciar</button>
+            </div>
+        </div>
+
+        <div id="cuentaAtras" class="oculto">
+            <div class="entrada">
+                <label for="tiempoInicial">Tiempo Inicial (segundos):</label>
+                <input type="number" id="tiempoInicial" min="1" value="60">
+            </div>
+            <div class="display">
+                <span id="cuentaAtrasDisplay">00:00:00</span>
+            </div>
+            <div class="botones">
+                <button id="btnIniciarCuentaAtras">Iniciar</button>
+                <button id="btnDetenerCuentaAtras">Detener</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

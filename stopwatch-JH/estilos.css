@@ -1,0 +1,58 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    margin-top: 50px;
+}
+
+.selector {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.selector button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.display {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.botones {
+    display: flex;
+}
+
+.botones button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.oculto {
+    display: none;
+}
+
+.entrada {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.entrada label {
+    margin-right: 10px;
+}
+
+.entrada input {
+    padding: 5px;
+    border: 1px solid #ccc;
+}
