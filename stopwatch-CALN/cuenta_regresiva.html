@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta Regresiva</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        #tiempo {
+            font-size: 2em;
+            margin: 20px;
+        }
+        input {
+            padding: 10px;
+            font-size: 1em;
+            margin: 10px;
+            width: 200px;
+        }
+        button {
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        #iniciar { background-color: green; }
+        #pausar { background-color: orange; }
+        #continuar { background-color: blue; }
+        #limpiar { background-color: red; }
+        #volver { background-color: purple; }
+    </style>
+</head>
+<body>
+    <h1>Cuenta Regresiva</h1>
+    <div id="tiempo">00:00:00:000</div>
+    <input type="text" id="tiempoInicial" placeholder="Ingrese tiempo (hh:mm:ss:ms)">
+    <button id="iniciar" onclick="iniciarCuentaRegresiva()">Iniciar</button>
+    <button id="pausar" style="display:none;" onclick="pausarCuentaRegresiva()">Pausar</button>
+    <button id="continuar" style="display:none;" onclick="continuarCuentaRegresiva()">Continuar</button>
+    <button id="limpiar" onclick="limpiarCuentaRegresiva()">Limpiar</button>
+    <button id="volver" onclick="location.href='index.html'">Volver</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
