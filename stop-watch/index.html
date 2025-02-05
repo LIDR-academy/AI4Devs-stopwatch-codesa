@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronómetro y Cuenta Regresiva</title>
+    <script defer src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center h-screen">
+    <div id="panel" class="text-center">
+        <h1 class="text-3xl mb-4">⌚ Selecciona una opción</h1>
+        <button id="btnCronometro" class="bg-blue-500 px-4 py-2 rounded-lg m-2">⏱️ Cronómetro</button>
+        <button id="btnCuentaRegresiva" class="bg-green-500 px-4 py-2 rounded-lg m-2">⏳ Cuenta Regresiva</button>
+    </div>
+    
+    <div id="cronometro" class="hidden text-center">
+        <h1 class="text-3xl mb-4">⏱️ Cronómetro</h1>
+        <p id="displayCrono" class="text-4xl">00:00:00:00</p>
+        <button id="btnIniciarCrono" class="bg-blue-500 px-4 py-2 rounded-lg m-2">▶️ Iniciar</button>
+        <button id="btnResetCrono" class="bg-red-500 px-4 py-2 rounded-lg m-2">🔄 Reset</button>
+        <button id="btnVolverPanel1" class="bg-gray-500 px-4 py-2 rounded-lg m-2">🔙 Volver</button>
+    </div>
+    
+    <div id="cuentaRegresiva" class="hidden text-center">
+        <h1 class="text-3xl mb-4">⏳ Cuenta Regresiva</h1>
+        <p id="displayCuenta" class="text-4xl">00:00:00:00</p>
+        <div id="botonesTiempo" class="mb-4"></div>
+        <button id="btnIniciarCuenta" class="bg-blue-500 px-4 py-2 rounded-lg m-2">▶️ Iniciar</button>
+        <button id="btnResetCuenta" class="bg-red-500 px-4 py-2 rounded-lg m-2">🔄 Reset</button>
+        <button id="btnVolverPanel2" class="bg-gray-500 px-4 py-2 rounded-lg m-2">🔙 Volver</button>
+    </div>
+</body>
+</html>
